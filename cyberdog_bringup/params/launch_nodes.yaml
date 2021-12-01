@@ -11,9 +11,9 @@ launch_nodes:
     #       #[optional] load_nodes_param: false (true/false)
     #       #[optional] enable_debug: false     (true/false)
 
-    - decision_cmd:
-        package: "cyberdog_decisionmaker"
-        executable: "decisionmaker"
+    - unified_manager_cmd:
+        package: "cyberdog_unified_manager"
+        executable: "unified_manager"
         load_nodes_param: true
         # enable_debug: true
 
@@ -48,6 +48,7 @@ launch_nodes:
         package: "cyberdog_audio"
         executable: "cyberdog_audio"
         output_screen: true
+        respawn: true
 
     - camera_live_cmd:
         package: "cyberdog_camera"
@@ -63,6 +64,11 @@ launch_nodes:
         package: "cyberdog_lightsensor"
         executable: "service_light_detection"
         name: "light_detection"
+
+    # - cyberdog_gps_cmd:
+    #     package: "cyberdog_gps"
+    #     executable: "cyberdog_gps_node"
+    #     name: "cyberdog_gps"
 
     - scene_detection_cmd:
         package: "cyberdog_scene_detection"

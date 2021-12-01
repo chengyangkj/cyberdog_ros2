@@ -1,6 +1,8 @@
 # Xiaomi CyberDog ROS 2
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](https://choosealicense.com/licenses/apache-2.0/)
+[![CI](https://github.com/MiRoboticsLab/cyberdog_ros2/actions/workflows/ci_check.yaml/badge.svg)](https://github.com/MiRoboticsLab/cyberdog_ros2/actions/workflows/ci_check.yaml)
+[![Join the chat at https://gitter.im/MiRoboticsLab/CyberDog](https://badges.gitter.im/MiRoboticsLab/CyberDog.svg)](https://gitter.im/MiRoboticsLab/CyberDog?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![CyberDogDog](tools/docs/cyberdog_poster.jpg)
 
@@ -120,7 +122,8 @@ $ sudo systemctl restart cyberdog_ros2.service
 
 ## 相关项目
 
-- [CyberDog_Ctrl](https://github.com/Karlsx/CyberDog_Ctrl):使用GRPC控制铁蛋
+- [CyberDog_Ctrl](https://github.com/Karlsx/CyberDog_Ctrl): 使用GRPC控制铁蛋
+- [CyberDog_Misc](https://github.com/zbwu/cyberdog_misc): 逆向的铁蛋相关接口和数据
 
 ## 相关资源
 

@@ -21,6 +21,7 @@ find_package(cascade_lifecycle_msgs REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
+find_package(toml11_vendor REQUIRED)
 
 include_directories(include)
 
@@ -44,10 +45,7 @@ add_library(${library_name} SHARED
 )
 
 ament_target_dependencies(${library_name}
-  rclcpp
-  lifecycle_msgs
-  rclcpp_lifecycle
-  cascade_lifecycle_msgs
+  ${dependencies}
 )
 
 if(BUILD_TESTING)
